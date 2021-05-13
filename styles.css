@@ -14,6 +14,11 @@ body{
     color: black;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .introBox {
   align-items: center;
   text-align: center;
@@ -22,6 +27,11 @@ body{
 
 nav {
   border-bottom: 3px black solid;
+}
+
+nav img {
+  width: auto;
+  height: 45px;
 }
 
 #aboutMeBox {
