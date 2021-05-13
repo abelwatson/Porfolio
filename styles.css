@@ -179,6 +179,7 @@ nav img {
   text-align: center;
   margin-bottom: -20px;
   padding-bottom: 1px;
+  border-top: 3px black ridge;
 }
 
 #footer img {
