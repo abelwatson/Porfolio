@@ -22,7 +22,8 @@ img {
 .introBox {
   align-items: center;
   text-align: center;
-  padding: 15vh;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 nav {
