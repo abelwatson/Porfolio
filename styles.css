@@ -34,7 +34,7 @@ img {
 }
 
 nav {
-  border-bottom: 3px black solid;
+  border-bottom: 3px black ridge;
 }
 
 nav img {
@@ -43,7 +43,7 @@ nav img {
 }
 
 #aboutMeBox {
-  border: black 5px solid;
+  border: rgb(44, 44, 44) 5px ridge;
   margin-top: 20px;
   margin-bottom: 10px;
   background-color: rgb(153, 152, 152);
@@ -58,7 +58,7 @@ nav img {
 }
 
 #projects {
-  border: 5px solid black;
+  border: 5px ridge rgb(31, 31, 31);
   padding: 20px;
   margin: 8%;
   background-color: rgb(78, 78, 78);
@@ -75,7 +75,7 @@ nav img {
 }
 
 #contactBox {
-  border: black 5px solid;
+  border: rgb(44, 44, 44) 5px ridge;
   margin-top: 5%;
   margin-left: 30%;
   margin-right: 30%;
