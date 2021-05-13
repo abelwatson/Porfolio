@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+      <link rel="stylesheet" href="styles.css">
     <title>Abel Watson's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="Assets/AWLogo.png" alt="AWLogo" width="50" height="40"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -30,23 +31,33 @@
               <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#connectWithMe">Contact</a>
+              <a class="nav-link" href="#contactBox">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+
     <section>
-      
+      <div class="introBox">
+        <img id="pictureofMyself" src="Assets/myself.jpg" alt="Myself">
+        <h1>Abel Watson</h1>
+      </div>
     </section>
-    <section class="py-5 text-center container">
-      <div class="row py-lg-5">
+
+
+    <section class="py-5 text-center container" id="aboutMeBox">
+      <div class="row py-lg-10" >
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light" id="aboutMe">About Me</h1>
-          <p class="lead text-muted">My name is Abel. I love long walks in the forest... wait, wrong site! I love coffee, play DnD, and have a luscious-hairy golden retriever. Currently  I'm mastering all four elements: People, Coffee, Coding and Life!</p>
-          <p class="lead text-muted">I'm enrolled at Eleven-Fifty Academy studying Web Development. I've been in the customer service and retail/food and beverage industry for more than 10 years and wanting a change pace and atmosphere.</p>
+          <h1 class="fw-dark" id="aboutMe"><strong>About Me</strong></h1>
+          <p class="lead">My name is Abel. I love long walks in the forest... wait, wrong site! I love coffee, play DnD, and have a luscious-hairy golden retriever. Currently  I'm mastering all four elements: People, Coffee, Coding and Life!</p>
+          <p class="lead"> Fluent in JavaScript, HTML and CSS </p>
+          <p class="lead"> Tool Knowledge of: Bootstrap, Codepen, Github, Terminal, and VScode.</p>
         </div>
       </div>
+    </section>
+    <section class="py-5 text-center container">
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -85,7 +96,7 @@
             <img src="Assets/LongerTermer.png" class="d-block w-100" alt="Long Timer">
             <div class="carousel-caption d-none d-md-block">
               <h5 style="color: white; text-shadow: 1px 1px 1px black, 1px 1px 1px black;">Long Timer</h5>
-              <p style="color: white; text-shadow: 1px 1px 1px black, 1px 1px 1px black;">Doesn't leave for any reason. AMC: 6 Years  SBUX: 6 Years</p>
+              <p style="color: white; text-shadow: 1px 1px 1px black, 1px 1px 1px black;">Doesn't give up easily. AMC: 6 Years / SBUX: 6 Years</p>
             </div>
           </div>
         </div>
@@ -99,8 +110,12 @@
         </button>
       </div>
     </section>
-      <section>
-        <h1 class="fw-light text-center" id="projects">Projects</h1>
+    <section>
+      <br />
+      <br />
+    </section>
+      <section id="projects">
+        <h1 class="fw-light text-center"><strong>Projects</strong></h1>
           <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               <div class="col">
@@ -175,153 +190,31 @@
           </div>
         </div>
     </section>
-    <section class="py-5 text-center container">
-      <form action="https://formspree.io/f/xqkwkgez"
-      method="POST">
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light" id="connectWithMe">Contact Me</h1>
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Full Name" id="full-name" required="">
-          </div>
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-          </div>
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Message" aria-describedby="button-addon2" style="text-align: center;">
-            <button class="btn btn-outline-secondary" style="background-color: grey; color: black; text-align: center;" type="button" id="button-addon2" id="message" required="">Connect</button>
-          </div>
-        </div>
-      </div>
-      </form>
-    </section>
+    <div id="contactBox">
+      <section class="contactForm container" >
+        <h1>Contact Me</h1>
+          <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xqkwkgez" method="post">
+          <fieldset id="fs-frm-inputs">
+            <label for="full-name">Full Name</label>
+            <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+            <label for="email-address">Email Address</label>
+            <input type="email" name="_replyto" id="email-address" placeholder="email@gmail.com" required="">
+            <label for="message">Message</label>
+            <textarea rows="5" name="message" id="message" placeholder="Message" required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          </fieldset>
+          <input type="submit" value="Submit">
+          </form>
+        </section>
+    </div>
 
-    <section class="contactForm">
-      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
-        <fieldset id="fs-frm-inputs">
-          <label for="full-name">Full Name</label>
-          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-          <label for="email-address">Email Address</label>
-          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-          <label for="message">Message</label>
-          <textarea rows="5" name="message" id="message" placeholder="Message" required=""></textarea>
-          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-        </fieldset>
-        <input type="submit" value="Submit">
-      </form>
-    </section>
-      <style>/* reset */
-    #fs-frm input,
-    #fs-frm select,
-    #fs-frm textarea,
-    #fs-frm fieldset,
-    #fs-frm optgroup,
-    #fs-frm label,
-    #fs-frm #card-element:disabled {
-      font-family: inherit;
-      font-size: 100%;
-      color: inherit;
-      border: none;
-      border-radius: 0;
-      display: block;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-    }
-    #fs-frm label,
-    #fs-frm legend,
-    #fs-frm ::placeholder {
-      font-size: .825rem;
-      margin-bottom: .5rem;
-      padding-top: .2rem;
-      display: flex;
-      align-items: baseline;
-    }
-    
-    /* border, padding, margin, width */
-    #fs-frm input,
-    #fs-frm select,
-    #fs-frm textarea,
-    #fs-frm #card-element {
-      border: 1px solid rgba(0,0,0,0.2);
-      background-color: rgba(255,255,255,0.9);
-      padding: .75em 1rem;
-      margin-bottom: 1.5rem;
-    }
-    #fs-frm input:focus,
-    #fs-frm select:focus,
-    #fs-frm textarea:focus {
-      background-color: white;
-      outline-style: solid;
-      outline-width: thin;
-      outline-color: gray;
-      outline-offset: -1px;
-    }
-    #fs-frm [type="text"],
-    #fs-frm [type="email"] {
-      width: 100%;
-    }
-    #fs-frm [type="button"],
-    #fs-frm [type="submit"],
-    #fs-frm [type="reset"] {
-      width: auto;
-      cursor: pointer;
-      -webkit-appearance: button;
-      -moz-appearance: button;
-      appearance: button;
-    }
-    #fs-frm [type="button"]:focus,
-    #fs-frm [type="submit"]:focus,
-    #fs-frm [type="reset"]:focus {
-      outline: none;
-    }
-    #fs-frm [type="submit"],
-    #fs-frm [type="reset"] {
-      margin-bottom: 0;
-    }
-    #fs-frm select {
-      text-transform: none;
-    }
-    
-    #fs-frm [type="checkbox"] {
-      -webkit-appearance: checkbox;
-      -moz-appearance: checkbox;
-      appearance: checkbox;
-      display: inline-block;
-      width: auto;
-      margin: 0 .5em 0 0 !important;
-    }
-    
-    #fs-frm [type="radio"] {
-      -webkit-appearance: radio;
-      -moz-appearance: radio;
-      appearance: radio;
-    }
-    
-    /* address, locale */
-    #fs-frm fieldset.locale input[name="city"],
-    #fs-frm fieldset.locale select[name="state"],
-    #fs-frm fieldset.locale input[name="postal-code"] {
-      display: inline;
-    }
-    #fs-frm fieldset.locale input[name="city"] {
-      width: 52%;
-    }
-    #fs-frm fieldset.locale select[name="state"],
-    #fs-frm fieldset.locale input[name="postal-code"] {
-      width: 20%;
-    }
-    #fs-frm fieldset.locale input[name="city"],
-    #fs-frm fieldset.locale select[name="state"] {
-      margin-right: 3%;
-    }
-    </style>
-
-
+<section>
+  <footer id="footer">
+    <p>Copyright © 2021 Abel Watson</p>
+    <p><a href="https://www.linkedin.com/in/abel-watson-13979865/" target="_blank"><img src="Assets/LinkedInLogo.png" alt=""></a>
+    <a href="policy.html"><img src="Assets/GitHubLogo.png" target="_blank"></a></p>
+  </footer>
+</section>
 
 
     <script src="java.js"></script>
@@ -332,5 +225,4 @@
       integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
       crossorigin="anonymous"></script>
   </body>
-
 </html>
