@@ -186,3 +186,20 @@ nav img {
   width: auto;
   height: 18px;
 }
+
+#DnDDice{
+  height: auto;
+  width: 62%;
+  margin: auto;
+}
+
+#RedBadge{
+  height: auto;
+  width: 67%;
+  margin: auto;
+}
+
+.projectsBackground {
+  background-color:  rgb(78, 78, 78);
+  border: rgb(44, 44, 44) 5px ridge;
+}
